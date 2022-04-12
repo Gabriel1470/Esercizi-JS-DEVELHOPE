@@ -5,7 +5,7 @@ const person1 = {
 };
 
 const person2 = person1;
-
+person2.firstName = 'Simon'
 // Modifica la proprietà "firstName" di person2 in "Simon"
 
 console.log(person1);

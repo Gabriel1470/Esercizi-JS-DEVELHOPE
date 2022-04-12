@@ -1,5 +1,29 @@
 function calculate() {
-  // ...
+  let total = 0;
+  return {
+    add(number) {
+      total += number;
+      return this;
+    },
+
+    multiply(number) {
+      total *= number;
+      return this;
+    },
+
+    sub(number) {
+      total -= number;
+      return this;
+    },
+    divide(number) {
+      total /= number;
+      return this;
+    },
+
+    printResult() {
+      console.log(total)
+    }
+  }
 }
 
 const calculator = calculate();
