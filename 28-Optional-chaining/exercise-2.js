@@ -1,7 +1,7 @@
 const order = {};
 
 if(!order.city in order){
-  console.log('City is required');
+console.log('City is required');
 }
 
 

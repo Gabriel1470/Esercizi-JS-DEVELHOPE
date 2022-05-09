@@ -1,3 +1,5 @@
+/* Miglior risultato */
+
 function memoize(fn) {
   let cache = {};
   return (num) => {

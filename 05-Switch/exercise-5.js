@@ -4,7 +4,7 @@
 // developer => 1500
 // default => 1000
 
-let input=prompt('lavoro')
+/* let input=prompt('lavoro') */
 
 function calculateSalary(input) {
   switch(input){
@@ -36,7 +36,12 @@ const developerSalary = calculateSalary('developer');
 const otherSalary = calculateSalary('other');
 
 calculateSalary()
-console.log(calculateSalary(input))
+console.log(ceoSalary);
+console.log(managerSalary);
+console.log(ctoSalary);
+console.log(developerSalary);
+console.log(otherSalary);
+/* console.log(calculateSalary(input)) */
 
 
 

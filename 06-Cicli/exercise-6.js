@@ -4,13 +4,12 @@
 function adultFilter(persons) {
 
   let adulti=[]
-  for (let i=0; i<persons.length ; i++ ){
+  for (let i = 0; i < persons.length ; i++ ){
   if(persons[i].age >= 18){
-    return(persons[i].name , persons[i].age)
+    adulti.push(persons[i])
   }
- 
 } 
-
+return adulti;
 }
 
 const persons = [
