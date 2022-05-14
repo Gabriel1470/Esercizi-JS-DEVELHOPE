@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <div id="container" style="display: flex; align-items: center;"></div>
+  </body>
+</html>
+
+<script>
+  // code here
+fetch('https://jsonplaceholder.typicode.com/todos/4')
+.then((resolve) => resolve.json())
+.then((datiResolve) => {
+  let elementH2 = document.createElement('h2');
+  elementH2.innerText = datiResolve.title ;
+
+  let elementInput = document.createElement('input');
+  elementInput.setAttribute('type', 'checkbox');
+  elementInput.setAttribute('checked', datiResolve.completed);
+  document.getElementById('container').append(elementH2,elementInput)
+})
+
+
+</script>

@@ -29,14 +29,18 @@ fetchPersonById(2).then((person) => console.log(person)); */
 
 function fetchPersonById(id) {
   return new Promise((resolve,reject) => {
-    if(persons.find(item => item.id === id)){
-    setTimeout(() => resolve(persons.find(item => item.id === id)), 1000);
+    if(persons.find(user => user.id === id)){
+
+    setTimeout(() => resolve(persons.find(user => user.id === id)), 1000);
+
   }else{
+
     reject("ID non disponibile")}
+    
   });
 }
 
 
-fetchPersonById(6)
+fetchPersonById(3)
 .then((person) => console.log(person))
 .catch((person) =>console.log(person))

@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <div id="container">
+      <h2>Person's Form</h2>
+      <form id="person-form">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+let formPerson = document.getElementById('person-form')
+
+window.onload = function initForm(){
+  formBody = document.createElement('div')
+  formBody.innerHTML = '<div> <label for=firstNMame >First Name</label><input type=text id=firstName placeholder=Jhoe required> <label for=lastName>Last Name </label> <input type=text id=lastName placeholder=Dhoe> <label for=ageForm>Age</label> <input type=num placeholder=10 id=ageForm required> </div>'
+formPerson.prepend(formBody)
+}
+
+formPerson.addEventListener('submit',(event)=>{
+  event.preventDefault();
+  let person = {};
+  let dati = document.querySelectorAll('input')
+  dati.forEach((item) => (person[item.id] = item.value));
+  console.log(person)
+})
+
+</script>
